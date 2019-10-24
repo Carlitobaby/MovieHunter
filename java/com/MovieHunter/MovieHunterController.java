@@ -11,5 +11,8 @@ public class MovieHunterController {
 		return "start";
 	}
 	
+//When attempting to debug and run the application it says that the
+	//"Selection does not contain a main type.  I'm going to review the code from ours and
+	//see if I can add what you're missing to get your start page to run
 	
 }
