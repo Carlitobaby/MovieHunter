@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.MovieHunter.dto.MovieDTO;
 import com.MovieHunter.service.IMovieService;
@@ -21,10 +22,11 @@ public class MovieHunterController {
 	 * @return
 	 */
 	@RequestMapping(value="/start", method=RequestMethod.GET)
-	public String read(Model model) {
+	@ResponseBody
+	public MovieDTO read(Model model) {
 		MovieDTO movieDTO = movieServiceStub.fetchById(12);
 		model.addAttribute("movieDTO", movieDTO);
-		return "start";
+		return movieDTO;
 	}
 	
 	@RequestMapping(value="/start", method=RequestMethod.GET, params= {"loyalty=blue"})
