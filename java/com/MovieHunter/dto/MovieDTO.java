@@ -32,4 +32,9 @@ public class MovieDTO {
 		this.description = description;
 	}
 	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return movieId + " " + title + " " + director + " " + description;
+	}
 }
