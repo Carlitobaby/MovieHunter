@@ -19,7 +19,11 @@ public class MovieHunterController {
 	//see if I can add what you're missing to get your start page to run
 	
 
-	//This is where I'll begin importing the code 
+	//This is where I'll begin importing the code I've added a second @request mapping value to 
+	//the code that has method=RequestMethod.Get within it.  I beleive that might be why the 
+	//start.html page isn't working.  I've also added a post mapping string create that might also help.
+	//Having a blank @requestMapping method won't give you any results since it's not calling a .GET
+	//method. 
 	
 	@RequestMapping(value="/start", method=RequestMethod.GET)
 	public String start() {
