@@ -30,6 +30,12 @@ public class MovieHunterController {
 		return movieDTO;
 	}
 	
+	/**
+	 * Add a movie to the model
+	 * @param model  The data model
+	 * @param title  The title of the movie to add
+	 * @return
+	 */
 	@RequestMapping(value="/addMovie", method=RequestMethod.GET)
 	public String addMovie(Model model, @RequestParam(value="title", required=false) String title) {
 		MovieDTO movieDTO = movieServiceStub.fetchById(12);
@@ -38,11 +44,10 @@ public class MovieHunterController {
 		return "start";
 	}
 	
-	@RequestMapping(value="/start", method=RequestMethod.GET, params= {"loyalty=blue"})
-	public String readBlue() {
-		return "start";
-	}
-	
+	/**
+	 * Handles reading JSON
+	 * @return
+	 */
 	@RequestMapping(value="/start", method=RequestMethod.GET, headers = {"content-type=text/json"})
 	public String readJSON() {
 		return "start";
