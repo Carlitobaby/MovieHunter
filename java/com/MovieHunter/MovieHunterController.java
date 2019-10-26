@@ -38,21 +38,6 @@ public class MovieHunterController {
 		return "start";
 	}
 	
-	@RequestMapping(value="/start", method=RequestMethod.GET, params= {"loyalty=blue"})
-	public String readBlue() {
-		return "start";
-	}
-	
-	@RequestMapping(value="/start", method=RequestMethod.GET, headers = {"content-type=text/json"})
-	public String readJSON() {
-		return "start";
-	}
-	
-	@PostMapping("/start")
-	public String create() {
-		return "start";
-	}
-	
 	/** Handle the /index end point
 	 * @return
 	 */

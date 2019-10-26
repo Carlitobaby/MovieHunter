@@ -31,10 +31,14 @@ public class MovieDTO {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+
+	public String getMovieInfo(){
+		return movieId + ": " + title + " - " + director + " - " + description;
+	}
 	
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return movieId + " " + title + " " + director + " " + description;
+		return title + " - " + director;
 	}
 }
