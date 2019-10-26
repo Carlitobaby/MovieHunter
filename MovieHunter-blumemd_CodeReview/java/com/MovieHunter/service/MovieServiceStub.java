@@ -87,7 +87,7 @@ public class MovieServiceStub implements IMovieService {
 	//method for validating movieId
 	public bool IdIsValid(int id)
 	{
-		//you could call the database here, but I try to keep db calls to a minimum as they can be costly
+		//you could call the database here, but I try to keep db calls to a minimum as they can be costly.
 		if (id > 0)
 		{
 			return true;
