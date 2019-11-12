@@ -11,5 +11,8 @@ public class MovieHunterController {
 		return "start";
 	}
 	
-	
+	@RequestMapping("/signIn")
+	public String signIn() {
+		return "signIn";
+	}
 }
