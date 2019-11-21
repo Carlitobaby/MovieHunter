@@ -22,7 +22,7 @@ public class MovieHunterController {
 	/** Handle the /start end point
 	 * @return
 	 */
-	@RequestMapping(value="/start", method=RequestMethod.GET)
+	@RequestMapping(value="/starter", method=RequestMethod.GET)
 	@ResponseBody
 	public MovieDTO read(Model model) {
 		MovieDTO movieDTO = movieServiceStub.fetchById(12);
@@ -48,8 +48,8 @@ public class MovieHunterController {
 		return "start";
 	}
 	
-	@PostMapping("/start")
-	public String create() {
+	@RequestMapping("/start")
+	public String start() {
 		return "start";
 	}
 	
