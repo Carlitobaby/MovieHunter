@@ -1,0 +1,13 @@
+main{
+  width: 100%;
+}
+section{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.Movies {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 10px solid black;
+}

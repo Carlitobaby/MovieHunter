@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html xmlns:th="http://thymeleaf.org">
 <head>
@@ -10,4 +11,73 @@ Welcome to Movie Hunter!
 Your movie is:
 <p th:text="${movieDTO}"/>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Movie Hunter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/main-styles.css"/>
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+    <link rel="icon" href="/img/logo-icon.ico"/>
+  </head>
+  <body>
+      <nav>
+        <div class="header">
+          <div class="navbar">
+            <img id="header-logo" src="/img/logo.png" class="header-logo"/>
+          </div>
+          <div class="navbar">
+            <form class="header-form">
+              <input type="text" name="text" class="search_box" placeholder="Search...">
+              <input type="submit" value=">" class="search_box">
+            </form>
+        </div>
+         <div class="navbar">
+              <button id="signUp">Sign Up</button>
+         </div>
+         </div>
+         <div class="nav- buttons">
+             <ul class="nav-links">
+               <li><a href="start">Home</a></li>
+               <li><a href="signIn">Sign In</a></li>
+             </ul>
+         </div>
+      </nav>
+      <main>
+        <section class="newMovies">
+          <h2>In Theatres</h2>
+          <div class="Movies">
+            <div><img src="https://via.placeholder.com/150" alt="placeholder"/></div>
+            <div><img src="https://via.placeholder.com/150" alt="placeholder"/></div>
+            <div><img src="https://via.placeholder.com/150" alt="placeholder"/></div>
+            <div><img src="https://via.placeholder.com/150" alt="placeholder"/></div>
+            <div><img src="https://via.placeholder.com/150" alt="placeholder"/></div>
+            <div><img src="https://via.placeholder.com/150" alt="placeholder"/></div>
+          </div>
+          <hr noshade>
+        </section>
+        <section class="favMovies">
+          <h2>Favorite Movies</h2>
+          <div class="Movies">
+            <div><img src="https://via.placeholder.com/150" alt="placeholder"/></div>
+            <div><img src="https://via.placeholder.com/150" alt="placeholder"/></div>
+            <div><img src="https://via.placeholder.com/150" alt="placeholder"/></div>
+            <div><img src="https://via.placeholder.com/150" alt="placeholder"/></div>
+            <div><img src="https://via.placeholder.com/150" alt="placeholder"/></div>
+            <div><img src="https://via.placeholder.com/150" alt="placeholder"/></div>
+          </div>
+          <hr noshade>
+        </section>
+      </main>
+      <footer>
+      </footer>
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="/slick/slick.min.js"></script>
+      <script type="text/javascript" src="/js/main.js" async></script>
+  </body>
+>>>>>>> refs/remotes/master/IntegBranch
 </html>
