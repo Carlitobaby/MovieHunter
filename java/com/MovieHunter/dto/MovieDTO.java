@@ -1,7 +1,14 @@
 package com.MovieHunter.dto;
 
-public class MovieDTO {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
+public class MovieDTO {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int movieId;
 	private String title;
 	private String director;
